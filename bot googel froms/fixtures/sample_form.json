@@ -1,0 +1,39 @@
+{
+  "form_title": "Local QA Sample Form",
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "multiple_choice",
+      "label": "Which test path should be exercised?",
+      "options": ["Standard", "Alternative", "Boundary"],
+      "required": true
+    },
+    {
+      "id": "Q2",
+      "type": "checkbox",
+      "label": "Select test areas",
+      "options": ["Validation", "Accessibility", "Layout"],
+      "required": true
+    },
+    {
+      "id": "Q3",
+      "type": "scale",
+      "label": "Test priority",
+      "min_value": 1,
+      "max_value": 5,
+      "required": true
+    },
+    {
+      "id": "Q4",
+      "type": "short_answer",
+      "label": "Test case identifier",
+      "required": true
+    },
+    {
+      "id": "Q5",
+      "type": "paragraph",
+      "label": "QA notes",
+      "required": false
+    }
+  ]
+}

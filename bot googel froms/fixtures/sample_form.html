@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Local QA Sample Form</title>
+</head>
+<body>
+  <h1>Local QA Sample Form</h1>
+  <form>
+    <fieldset data-question-id="Q1" data-question-type="multiple_choice" required>
+      <legend>Which test path should be exercised?</legend>
+      <label><input type="radio" name="Q1" value="Standard">Standard</label>
+      <label><input type="radio" name="Q1" value="Alternative">Alternative</label>
+      <label><input type="radio" name="Q1" value="Boundary">Boundary</label>
+    </fieldset>
+    <fieldset data-question-id="Q2" data-question-type="checkbox" required>
+      <legend>Select test areas</legend>
+      <label><input type="checkbox" name="Q2" value="Validation">Validation</label>
+      <label><input type="checkbox" name="Q2" value="Accessibility">Accessibility</label>
+      <label><input type="checkbox" name="Q2" value="Layout">Layout</label>
+    </fieldset>
+    <fieldset data-question-id="Q3" data-question-type="scale" required>
+      <legend>Test priority</legend>
+      <input type="number" min="1" max="5" aria-label="Test priority">
+    </fieldset>
+    <fieldset data-question-id="Q4" data-question-type="short_answer" required>
+      <legend>Test case identifier</legend>
+      <input type="text" aria-label="Test case identifier">
+    </fieldset>
+    <fieldset data-question-id="Q5" data-question-type="paragraph">
+      <legend>QA notes</legend>
+      <textarea aria-label="QA notes"></textarea>
+    </fieldset>
+  </form>
+</body>
+</html>
